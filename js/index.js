@@ -6,24 +6,7 @@ document.getElementById("secinp").value = 'BTC';
 document.getElementById("secinp2").value = 'JOINT';
 		$( '.div2' ).hide();
 		$( '.div3' ).hide();
-    
-       $("#selUser").select2({
-       templateResult: formatState
-      });
-     
-      $("#selUser").select2();
-    
-      // Read selected option
-      $('#but_read').click(function(){
-        var username = $('#selUser option:selected').text();
-        var userid = $('#selUser').val();
-    
-        $('#result').html("id : " + userid + ", name : " + username);
-    
-      });
-      
-      
-    
+  
     });
 	   function clear() {
  			console.log("sff");
@@ -60,14 +43,14 @@ document.getElementById("secinp2").value = 'JOINT';
     document.getElementById("secinp").value = val;
     
     }
-        function showlist1(){
+    function showlist1(){
     		
             $( '.div1' ).hide();
             $( '.div2' ).show();
             
             
         }
-		function navopen(){
+    function navopen(){
 			
 			  $( ".nav" ).toggle( "slow", function() {
   
