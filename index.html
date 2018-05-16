@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>home</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href='css/select2.min.css' rel='stylesheet' type='text/css'>
+<script src='js/select2.min.js' type='text/javascript'></script>
+<script src='js/index.js' type='text/javascript'></script>
+
+</head>
+
+ <body>
+		<header class="main-header">
+		  <div class="top-hed">
+			   <div class="container">
+				  <div class="logo">
+					  <a href="#"><img src="img/logo.png"></a>
+				  </div>
+                  <div class="logo mobile-logo">
+					  <a href="#"><img src="img/mobile-logo.png"></a>
+				  </div>
+
+                  <div class="mobile-toggle" onclick="navopen()"><img src="img/toggle.png"></div>
+				  <nav class="nav">
+					 <ul>
+						 <li><a href="#">About</a></li>     
+						 <li><a href="#">FAQ</a></li>
+						 <li><a href="#">Blog</a></li>
+						 <li><a href="#">Login</a></li>
+					 </ul>
+				  </nav>
+			   </div>
+		   </div>
+		</header>
+		
+		    <div class="middle-sec">
+             <div class="container">
+         <div class="box-form">
+<h2>Cryptocurrency Exchange</h2>
+<form>
+                    <div class="first-feild">
+
+                        <div class="div1">
+                            <input type="text" id="placeSelect1" onclick="showlist1()" placeholder="Search for .."/>
+							<input class="text-overlay" type = "text" id="secinp" readonly="true" onclick="showlist1()">
+                        </div>
+                                    
+                        <div class="div2">
+                           <button class="close" onclick="clear()">X</button>
+                           <i class="fa fa-search" aria-hidden="true"></i>
+                            <input class="fa-search" type="text" id="placeSelect" onclick="showlist()" onkeyup="showl()" placeholder="Search"/>
+                        </div>
+                                    
+                        <div class="div3">
+                            <ul id='showall'>
+                            </ul>
+                        </div>
+                    
+                    </div>
+<div class="first-feild second-field">
+
+                        <div class="div4">
+                            <input type="text" id="placeSelect2" onclick="showJoint()" readonly="true"/>
+<input class="text-overlay" type = "text" id="secinp2" readonly="true">
+                        </div>
+                                    
+                        <!-- <div class="div2"><i class="fa fa-search" aria-hidden="true"></i>
+                            <input class="fa-search" type="text" id="placeSelect" onclick="showlist()" onkeyup="showl()" placeholder="Search"/>
+                        </div>
+                                    
+                        <div class="div3">
+                            <ul id='showall'>
+                            </ul>
+                        </div> -->
+                    
+                    </div>
+
+
+                    <input type="text" placeholder="YOUR WALLET ADDRESS"/>
+                    <div class="submit-button">
+                     <button type="submit" value="Exchange" class="btnsubmit">Exchange</button>
+					</div>
+</form>
+</div>
+        
+             </div>
+        </div>
+		
+		<footer class="main-footer">
+			 <div class="container">
+			  
+			 </div>
+		</footer>
+       <!----------------------footer-close------------------------->
+  </body>
+</html>
