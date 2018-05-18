@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+<<<<<<< HEAD
   
     $.ajax({
         url:"https://xapi.jointdemo.com/send-list",
@@ -85,6 +86,19 @@ document.getElementById("secinp2").value = 'JOINT';
             //document.getElementById("placeSelect").value = '';
             //$( ".div2" ).addClass( "yourClass" );
     
+=======
+document.getElementById("placeSelect1").value = 'YOU SEND';
+document.getElementById("placeSelect2").value = 'YOU GET';
+document.getElementById("secinp").value = 'BTC';
+document.getElementById("secinp2").value = 'JOINT';
+		$( '.div2' ).hide();
+		$( '.div3' ).hide();
+  
+    });
+	   function clear() {
+ 			console.log("sff");
+			document.getElementById("placeSelect").value = '';
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
       }
   
     function showl(){
@@ -94,12 +108,18 @@ document.getElementById("secinp2").value = 'JOINT';
         
         ul = document.getElementById("showall");
         
+<<<<<<< HEAD
         li = ul.getElementsByTagName("div");
         console.log(li.length);
+=======
+        li = ul.getElementsByTagName("option");
+        
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
         for (i = 0; i < li.length; i++) {
             a = li[i];
             console.log(a);
             if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+<<<<<<< HEAD
             
                 $( '#showall' ).removeClass('listheight');
                
@@ -110,10 +130,16 @@ document.getElementById("secinp2").value = 'JOINT';
                 $( '#showall' ).addClass('listheight');
                 li[i].style.display = "none";
                  
+=======
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     
             }
         }
     }
+<<<<<<< HEAD
 
    
 
@@ -121,10 +147,16 @@ document.getElementById("secinp2").value = 'JOINT';
     function myfun(val,val2){
     console.log(val);
    this.variable1 = val;
+=======
+    
+    function myfun(val,val2){
+    console.log(val);
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     console.log(val2);
     $( '.div1' ).show();
     $( '.div2' ).hide();
     $('.div3').hide();
+<<<<<<< HEAD
     
      $('#imgappend').empty().append('<img onclick="showlist1()" src="./img/'+val+'.png"/>')
      document.getElementById("secinp").value =  val;
@@ -210,6 +242,16 @@ document.getElementById("secinp2").value = 'JOINT';
         
             }
            
+=======
+    document.getElementById("secinp").value = val;
+    
+    }
+    function showlist1(){
+    		
+            $( '.div1' ).hide();
+            $( '.div2' ).show();
+            
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
             
         }
     function navopen(){
@@ -219,7 +261,30 @@ document.getElementById("secinp2").value = 'JOINT';
   		});
 		}
      function showlist(){
+<<<<<<< HEAD
    
+=======
+        $( '.div3' ).show();
+		$( '.sel' ).hide();
+		$("select").hide();
+     $.ajax({
+        url:"https://xapi.jointdemo.com/send-list",
+        //async: false,
+        type: "GET",
+        dataType: "json",
+        success:function(response_data_json) {
+            jQuery.each(response_data_json, function(i, val) {
+            console.log(val);
+            console.log(i);
+             
+                $("#yourdivid1").append(document.createTextNode(val.name));
+                $("#yourdivid2").append(document.createTextNode(val.symbol));
+                
+                    var opt = new Option(val.name);  
+                    var symbol = "'"+val.symbol+"'";
+                    var name = "'"+val.name+"'";
+                    $("#showall").append('<option id="yes" value="'+i+'" onclick="myfun('+symbol+', '+name+');">\<strong style="font-weight: 800;">'+val.symbol+'</strong>&nbsp;&nbsp;'+val.name+'</option>');
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
                         
         var input, filter, ul, li;
         input = document.getElementById("placeSelect");
@@ -230,6 +295,7 @@ document.getElementById("secinp2").value = 'JOINT';
             a = li[i];
             console.log(a);
             if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+<<<<<<< HEAD
               
                 li[i].style.display = " ";
                 
@@ -369,3 +435,16 @@ var arr1 = [];
          }
 
       
+=======
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+    
+            }
+        }
+                    });
+                }, 
+     });
+     
+     }
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932

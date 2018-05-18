@@ -80,6 +80,7 @@ nav.nav li a {
     box-shadow: 0 10px 40px 0 rgba(0,0,0,0.1);
     margin: 0 auto;
     padding: 60px 50px 0px;
+<<<<<<< HEAD
 	overflow-x:hidden;
 }
 .listheight {
@@ -88,6 +89,9 @@ nav.nav li a {
 
 .listheight2 {
     height: auto !important;
+=======
+	overflow:hidden;
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
 }
 .box-form h2 {
     font-size: 40px;
@@ -241,12 +245,17 @@ span.select2.select2-container.select2-container--default:last-child {
 .mobile-toggle{
   display: none;
 }
+<<<<<<< HEAD
 #showall, ul#showall2 {
+=======
+#showall {
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     background-color: #FFFFFF;
     box-shadow: 0 6px 7px 3px rgba(0,0,0,0.1);
     border-top: solid 1px #e5e5e5;
     position: absolute;
     width: 100%;
+<<<<<<< HEAD
     z-index: 9999;
     height: 230px;
     overflow-x: hidden;
@@ -259,11 +268,25 @@ ul#showall option {
     color: #ccc;
 }
 ul#showall li:hover, ul#showall2 li:hover{
+=======
+    z-index: 999;
+    height: 230px;
+    overflow-x: hidden;
+    padding: 10px ;
+}
+ul#showall option {
+    font-size: 21px;
+    line-height: 38px;
+	padding: 0 10px;
+}
+ul#showall option:hover{
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
 background: #f7f7f7;
 }
 .div1 {
     position: relative;
 }
+<<<<<<< HEAD
 #showall div, #showall2 div {
     padding: px 0;
     float: left;
@@ -283,6 +306,8 @@ background: #f7f7f7;
 #showall div li strong ,#showall2 div li strong {
     color: #000;
 }
+=======
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
 input#secinp {
     position: absolute;
     top: 10px;
@@ -296,12 +321,19 @@ input#secinp {
     background-image: url(../img/drop.png);
     background-repeat: no-repeat;
     background-position: 89%;
+<<<<<<< HEAD
     font-size: 16px;
     cursor: pointer;
     padding: 0 22px 0 35px;
 }
 input#secinp2 {
     position: absolute;
+=======
+    font-size: 18px;
+}
+input#secinp2 {
+   position: absolute;
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     top: 10px;
     right: 18px;
     width: 120px;
@@ -313,16 +345,26 @@ input#secinp2 {
     background-image: url(../img/drop.png);
     background-repeat: no-repeat;
     background-position: 89%;
+<<<<<<< HEAD
     font-size: 16px;
     padding-left: 32px;
     cursor: pointer;
 }
 .div2 i.fa.fa-search, .div5 i.fa.fa-search {
+=======
+    font-size: 18px;
+}
+.div2 i.fa.fa-search {
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     position: absolute;
     top: 25px;
     left: 18px;
 }
+<<<<<<< HEAD
 input#placeSelect , #placeSelect2 {
+=======
+input#placeSelect {
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     padding-left: 43px;
     text-transform: uppercase;
 }
@@ -339,12 +381,23 @@ input#placeSelect , #placeSelect2 {
 }
 }
 @media(max-width:991px){
+<<<<<<< HEAD
     .container {
         width: 100%;
         padding: 0 30px;
     }
 }
 @media(max-width:767px){
+=======
+.container{
+   width:737px;
+}
+}
+@media(max-width:767px){
+.container{
+   width:580px;
+}
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
 body {
     background-color: #f6f8fd;
     background-image: none;
@@ -386,6 +439,10 @@ nav.nav, .logo {
 }
 .first-feild.second-field {
     margin-bottom: 20px;
+<<<<<<< HEAD
+=======
+    position: relative;
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
 }
 nav.nav {
     float: right;
@@ -405,7 +462,11 @@ nav.nav li {
     width: 100%;
 	    padding: 7px 20px;
 }
+<<<<<<< HEAD
 .div2, .div5 {
+=======
+.div2 {
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     position: absolute;
     top: 0;
     background: #fff;
@@ -416,7 +477,11 @@ nav.nav li {
     right: 0;
     border: 0;
 }
+<<<<<<< HEAD
 #showall, #showall2 {
+=======
+#showall {
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
     background-color: #FFFFFF;
     box-shadow: 0 6px 7px 3px rgba(0,0,0,0.1);
     border-top: solid 1px #e5e5e5;
@@ -444,6 +509,7 @@ nav.nav li {
     cursor: pointer;
 	border:none;
 }
+<<<<<<< HEAD
 .submit-button button.btnsubmit {
     width: 100%;
 }
@@ -466,10 +532,23 @@ nav.nav li {
 }
 @media(max-width:480px){
 
+=======
+}
+@media(max-width:600px){
+.container{
+   width:450px;
+}
+}
+@media(max-width:480px){
+.container{
+   width:300px;
+}
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
 .box-form h2 {
     font-size: 32px;
     font-weight: 400;
 }
+<<<<<<< HEAD
 }
 /* div {
     position: relative; 
@@ -732,3 +811,6 @@ input.WalletAdd + label > span {
   }
 }
 
+=======
+}
+>>>>>>> 18183f7f4bd759838a9927fc8d8a57dfa65d9932
